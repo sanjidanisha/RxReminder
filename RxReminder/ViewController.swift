@@ -11,19 +11,36 @@ import Firebase
 import FirebaseAuthUI
 
 class ViewController: UIViewController {
-    var ref: DatabaseReference!
+    
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    
+//    @IBOutlet weak var loginButton: FUIAuthSignInButton!
+    
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        ref = Database.database().reference()
+        setUpElements()
+//        ref = Database.database().reference()
+//
+//        self.ref.child("user_id").setValue(123456)
+//        self.ref.child("name").setValue("Nisha")
+//        self.ref.child("age").setValue(65)
         
-        self.ref.child("user_id").setValue(123456)
-        self.ref.child("name").setValue("Nisha")
-        self.ref.child("age").setValue(65)
-        
+    }
+    
+    func setUpElements(){
+        errorLabel.alpha = 0
     }
     
     @IBOutlet weak var usernameIcon: UITextField!{
@@ -41,23 +58,25 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func loginButton(_ sender: UIButton) {
-        
-        let authUI = FUIAuth.defaultAuthUI()
-        
-        guard authUI != nil else {
-            return
-        }
-        
-        authUI?.delegate = self
-        
-        let authViewController = authUI!.authViewController()
-        
-        present(authViewController, animated: true, completion: nil)
-        
-    }
-
+//    @IBAction func loginButton(_ sender: UIButton) {
+//
+//        let authUI = FUIAuth.defaultAuthUI()
+//
+//        guard authUI != nil else {
+//            return
+//        }
+//
+//        authUI?.delegate = self
+//
+//        let authViewController = authUI!.authViewController()
+//
+//        present(authViewController, animated: true, completion: nil)
+//
+//    }
+    
+    
 }
+
 
 extension UITextField {
    func setIcon(_ image: UIImage) {
@@ -73,7 +92,7 @@ extension UITextField {
 }
 
 extension ViewController: FUIAuthDelegate {
-    
+
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?)
     {
         if error != nil {
