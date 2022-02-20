@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		14E7B75527B4042C00E23244 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7B75427B4042C00E23244 /* SignUpViewController.swift */; };
+		39F9A1FAF26AFD4E4EDE16BE /* Pods_RxReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1FE468472583DBCCB43AEB /* Pods_RxReminder.framework */; };
 		3DD8D6E5795E99AF9140AAF6 /* Pods_RxReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15BF79FF4276460345BC3B0 /* Pods_RxReminder.framework */; };
 		83A7B6A5D8154C694241A102 /* Pods_RxReminder_RxReminderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2A882CCF19894886443959 /* Pods_RxReminder_RxReminderUITests.framework */; };
+		8D1295867CB46A58009C9DF5 /* Pods_RxReminder_RxReminderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B585842119F127C31D1A75 /* Pods_RxReminder_RxReminderUITests.framework */; };
+		A26C36CB46631FDAC4C72A75 /* Pods_RxReminderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433DF8081008194E8C3B4C06 /* Pods_RxReminderTests.framework */; };
 		C400DE27BAAE06C4A55C2B7C /* Pods_RxReminderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5BC006054E4A26498C135D /* Pods_RxReminderTests.framework */; };
 		C7A1C53427B245D100A78B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C53327B245D100A78B52 /* AppDelegate.swift */; };
 		C7A1C53627B245D100A78B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C53527B245D100A78B52 /* SceneDelegate.swift */; };
@@ -42,8 +45,10 @@
 /* Begin PBXFileReference section */
 		14E7B75427B4042C00E23244 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1E9F22BF4869CC0A3E982EB3 /* Pods-RxReminder-RxReminderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminder-RxReminderUITests.release.xcconfig"; path = "Target Support Files/Pods-RxReminder-RxReminderUITests/Pods-RxReminder-RxReminderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		433DF8081008194E8C3B4C06 /* Pods_RxReminderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxReminderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59428121822C81300104D8C9 /* Pods-RxReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminder.debug.xcconfig"; path = "Target Support Files/Pods-RxReminder/Pods-RxReminder.debug.xcconfig"; sourceTree = "<group>"; };
 		9421DC5FC12E1A9760E20AE6 /* Pods-RxReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminder.release.xcconfig"; path = "Target Support Files/Pods-RxReminder/Pods-RxReminder.release.xcconfig"; sourceTree = "<group>"; };
+		A8B585842119F127C31D1A75 /* Pods_RxReminder_RxReminderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxReminder_RxReminderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD51EAA864AAA232C6CDA17E /* Pods-RxReminderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminderTests.debug.xcconfig"; path = "Target Support Files/Pods-RxReminderTests/Pods-RxReminderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC2A882CCF19894886443959 /* Pods_RxReminder_RxReminderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxReminder_RxReminderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A1C53027B245D100A78B52 /* RxReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +68,7 @@
 		C7A1C56327B249C200A78B52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D15BF79FF4276460345BC3B0 /* Pods_RxReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5BC006054E4A26498C135D /* Pods_RxReminderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxReminderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1FE468472583DBCCB43AEB /* Pods_RxReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF28690842F8AAB561C2403 /* Pods-RxReminderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminderTests.release.xcconfig"; path = "Target Support Files/Pods-RxReminderTests/Pods-RxReminderTests.release.xcconfig"; sourceTree = "<group>"; };
 		FFAD1A8E77C2F925D9CA07ED /* Pods-RxReminder-RxReminderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminder-RxReminderUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxReminder-RxReminderUITests/Pods-RxReminder-RxReminderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD8D6E5795E99AF9140AAF6 /* Pods_RxReminder.framework in Frameworks */,
+				39F9A1FAF26AFD4E4EDE16BE /* Pods_RxReminder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C400DE27BAAE06C4A55C2B7C /* Pods_RxReminderTests.framework in Frameworks */,
+				A26C36CB46631FDAC4C72A75 /* Pods_RxReminderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A7B6A5D8154C694241A102 /* Pods_RxReminder_RxReminderUITests.framework in Frameworks */,
+				8D1295867CB46A58009C9DF5 /* Pods_RxReminder_RxReminderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +107,7 @@
 		446B1EE2BC725D233F4CE851 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				8D2BA2D99EC4C74C751C567D /* Frameworks */,
 				59428121822C81300104D8C9 /* Pods-RxReminder.debug.xcconfig */,
 				9421DC5FC12E1A9760E20AE6 /* Pods-RxReminder.release.xcconfig */,
 				FFAD1A8E77C2F925D9CA07ED /* Pods-RxReminder-RxReminderUITests.debug.xcconfig */,
@@ -108,6 +118,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		82610EFB5CE00B6ABB12510A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FE468472583DBCCB43AEB /* Pods_RxReminder.framework */,
+				A8B585842119F127C31D1A75 /* Pods_RxReminder_RxReminderUITests.framework */,
+				433DF8081008194E8C3B4C06 /* Pods_RxReminderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D2BA2D99EC4C74C751C567D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +136,7 @@
 				EC5BC006054E4A26498C135D /* Pods_RxReminderTests.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C7A1C52727B245D100A78B52 = {
@@ -126,7 +147,7 @@
 				C7A1C55427B245D500A78B52 /* RxReminderUITests */,
 				C7A1C53127B245D100A78B52 /* Products */,
 				446B1EE2BC725D233F4CE851 /* Pods */,
-				8D2BA2D99EC4C74C751C567D /* Frameworks */,
+				82610EFB5CE00B6ABB12510A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

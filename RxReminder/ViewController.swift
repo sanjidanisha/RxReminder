@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuthUI
+import FirebaseAuth
 
 class ViewController: UIViewController {
     
@@ -18,8 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var forgotPasswordButton: UIButton!
-    
-//    @IBOutlet weak var loginButton: FUIAuthSignInButton!
+
+    @IBOutlet weak var loginButton: UIButton!
     
     @IBOutlet weak var signUpButton: UIButton!
     
@@ -57,23 +58,29 @@ class ViewController: UIViewController {
        }
     }
     
-    
-//    @IBAction func loginButton(_ sender: UIButton) {
-//
-//        let authUI = FUIAuth.defaultAuthUI()
-//
-//        guard authUI != nil else {
-//            return
-//        }
-//
-//        authUI?.delegate = self
-//
-//        let authViewController = authUI!.authViewController()
-//
-//        present(authViewController, animated: true, completion: nil)
-//
-//    }
-    
+    @IBAction func loginTapped(_ sender: Any) {
+        
+        let username = usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        Auth.auth().signIn(withEmail: username, password: password) { (result,error) in
+            
+            if error != nil {
+                self.errorLabel.text = error!.localizedDescription
+                self.errorLabel.alpha = 1
+            }
+            else {
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+                
+                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+                
+            }
+        }
+    }
     
 }
 
