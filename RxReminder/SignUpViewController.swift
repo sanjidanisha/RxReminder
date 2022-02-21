@@ -133,3 +133,8 @@ class SignUpViewController: UIViewController {
     }
     
 }
+
+extension ViewController {
+    @IBAction func cancelToHomeViewController(_ segue: UIStoryboardSegue) {
+    }
+}
