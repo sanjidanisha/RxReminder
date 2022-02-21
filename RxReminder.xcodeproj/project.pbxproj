@@ -229,6 +229,7 @@
 				C7A1C52D27B245D100A78B52 /* Frameworks */,
 				C7A1C52E27B245D100A78B52 /* Resources */,
 				52796E6936BDAFABAED3F06A /* [CP] Embed Pods Frameworks */,
+				A2A6CAEE8AB9D6FC26C04ABD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +268,7 @@
 				C7A1C54E27B245D500A78B52 /* Frameworks */,
 				C7A1C54F27B245D500A78B52 /* Resources */,
 				F1ABC671014018F8619021CA /* [CP] Embed Pods Frameworks */,
+				CD288696E996714E32954E8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -367,6 +369,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxReminder/Pods-RxReminder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A2A6CAEE8AB9D6FC26C04ABD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxReminder/Pods-RxReminder-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxReminder/Pods-RxReminder-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxReminder/Pods-RxReminder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A2E7AF4B94F6A05518FA4542 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,6 +406,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD288696E996714E32954E8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxReminder-RxReminderUITests/Pods-RxReminder-RxReminderUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxReminder-RxReminderUITests/Pods-RxReminder-RxReminderUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxReminder-RxReminderUITests/Pods-RxReminder-RxReminderUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D5CDEE12FA3BE3CD3C5B5625 /* [CP] Check Pods Manifest.lock */ = {
