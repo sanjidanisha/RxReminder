@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		14E7B75527B4042C00E23244 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7B75427B4042C00E23244 /* SignUpViewController.swift */; };
 		14E7B75927B4045D00E23244 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7B75827B4045D00E23244 /* HomeViewController.swift */; };
-		14E7B75B27B8C36000E23244 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7B75A27B8C36000E23244 /* HomeTableViewController.swift */; };
 		3DD8D6E5795E99AF9140AAF6 /* Pods_RxReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15BF79FF4276460345BC3B0 /* Pods_RxReminder.framework */; };
 		83A7B6A5D8154C694241A102 /* Pods_RxReminder_RxReminderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2A882CCF19894886443959 /* Pods_RxReminder_RxReminderUITests.framework */; };
 		C400DE27BAAE06C4A55C2B7C /* Pods_RxReminderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5BC006054E4A26498C135D /* Pods_RxReminderTests.framework */; };
+		C713566827C36624005AD2E1 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713566527C36624005AD2E1 /* ReminderListCell.swift */; };
+		C713566927C36624005AD2E1 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713566627C36624005AD2E1 /* Reminder.swift */; };
+		C713566A27C36624005AD2E1 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713566727C36624005AD2E1 /* ReminderListViewController.swift */; };
+		C713566C27C3664D005AD2E1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713566B27C3664D005AD2E1 /* ListViewController.swift */; };
+		C713567127C36652005AD2E1 /* medList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713566E27C36652005AD2E1 /* medList.swift */; };
+		C713567227C36652005AD2E1 /* medListFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713566F27C36652005AD2E1 /* medListFirebase.swift */; };
+		C713567327C36652005AD2E1 /* medListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713567027C36652005AD2E1 /* medListService.swift */; };
+		C713567527C36672005AD2E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713567427C36672005AD2E1 /* TableViewCell.swift */; };
 		C7A1C53427B245D100A78B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C53327B245D100A78B52 /* AppDelegate.swift */; };
 		C7A1C53627B245D100A78B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C53527B245D100A78B52 /* SceneDelegate.swift */; };
 		C7A1C53827B245D100A78B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C53727B245D100A78B52 /* ViewController.swift */; };
@@ -44,12 +51,19 @@
 /* Begin PBXFileReference section */
 		14E7B75427B4042C00E23244 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		14E7B75827B4045D00E23244 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		14E7B75A27B8C36000E23244 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		1E9F22BF4869CC0A3E982EB3 /* Pods-RxReminder-RxReminderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminder-RxReminderUITests.release.xcconfig"; path = "Target Support Files/Pods-RxReminder-RxReminderUITests/Pods-RxReminder-RxReminderUITests.release.xcconfig"; sourceTree = "<group>"; };
 		59428121822C81300104D8C9 /* Pods-RxReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminder.debug.xcconfig"; path = "Target Support Files/Pods-RxReminder/Pods-RxReminder.debug.xcconfig"; sourceTree = "<group>"; };
 		9421DC5FC12E1A9760E20AE6 /* Pods-RxReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminder.release.xcconfig"; path = "Target Support Files/Pods-RxReminder/Pods-RxReminder.release.xcconfig"; sourceTree = "<group>"; };
 		AD51EAA864AAA232C6CDA17E /* Pods-RxReminderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxReminderTests.debug.xcconfig"; path = "Target Support Files/Pods-RxReminderTests/Pods-RxReminderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC2A882CCF19894886443959 /* Pods_RxReminder_RxReminderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxReminder_RxReminderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C713566527C36624005AD2E1 /* ReminderListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
+		C713566627C36624005AD2E1 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		C713566727C36624005AD2E1 /* ReminderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
+		C713566B27C3664D005AD2E1 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C713566E27C36652005AD2E1 /* medList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = medList.swift; sourceTree = "<group>"; };
+		C713566F27C36652005AD2E1 /* medListFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = medListFirebase.swift; sourceTree = "<group>"; };
+		C713567027C36652005AD2E1 /* medListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = medListService.swift; sourceTree = "<group>"; };
+		C713567427C36672005AD2E1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C7A1C53027B245D100A78B52 /* RxReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A1C53327B245D100A78B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7A1C53527B245D100A78B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +136,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C713566427C36624005AD2E1 /* HomeScreenNew */ = {
+			isa = PBXGroup;
+			children = (
+				C713566527C36624005AD2E1 /* ReminderListCell.swift */,
+				C713566627C36624005AD2E1 /* Reminder.swift */,
+				C713566727C36624005AD2E1 /* ReminderListViewController.swift */,
+			);
+			path = HomeScreenNew;
+			sourceTree = "<group>";
+		};
+		C713566D27C36652005AD2E1 /* medList */ = {
+			isa = PBXGroup;
+			children = (
+				C713566E27C36652005AD2E1 /* medList.swift */,
+				C713566F27C36652005AD2E1 /* medListFirebase.swift */,
+				C713567027C36652005AD2E1 /* medListService.swift */,
+			);
+			path = medList;
+			sourceTree = "<group>";
+		};
 		C7A1C52727B245D100A78B52 = {
 			isa = PBXGroup;
 			children = (
@@ -153,11 +187,14 @@
 				C7A1C56327B249C200A78B52 /* GoogleService-Info.plist */,
 				C7A1C53927B245D100A78B52 /* Main.storyboard */,
 				C7A1C53C27B245D500A78B52 /* Assets.xcassets */,
+				C713566427C36624005AD2E1 /* HomeScreenNew */,
 				C7A1C53E27B245D500A78B52 /* LaunchScreen.storyboard */,
+				C713567427C36672005AD2E1 /* TableViewCell.swift */,
 				C7A1C54127B245D500A78B52 /* Info.plist */,
+				C713566B27C3664D005AD2E1 /* ListViewController.swift */,
+				C713566D27C36652005AD2E1 /* medList */,
 				14E7B75427B4042C00E23244 /* SignUpViewController.swift */,
 				14E7B75827B4045D00E23244 /* HomeViewController.swift */,
-				14E7B75A27B8C36000E23244 /* HomeTableViewController.swift */,
 			);
 			path = RxReminder;
 			sourceTree = "<group>";
@@ -420,12 +457,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E7B75B27B8C36000E23244 /* HomeTableViewController.swift in Sources */,
+				C713567527C36672005AD2E1 /* TableViewCell.swift in Sources */,
+				C713567127C36652005AD2E1 /* medList.swift in Sources */,
+				C713566A27C36624005AD2E1 /* ReminderListViewController.swift in Sources */,
+				C713567327C36652005AD2E1 /* medListService.swift in Sources */,
 				C7A1C53827B245D100A78B52 /* ViewController.swift in Sources */,
+				C713566927C36624005AD2E1 /* Reminder.swift in Sources */,
 				C7A1C53427B245D100A78B52 /* AppDelegate.swift in Sources */,
 				14E7B75527B4042C00E23244 /* SignUpViewController.swift in Sources */,
+				C713567227C36652005AD2E1 /* medListFirebase.swift in Sources */,
+				C713566C27C3664D005AD2E1 /* ListViewController.swift in Sources */,
 				C7A1C53627B245D100A78B52 /* SceneDelegate.swift in Sources */,
 				14E7B75927B4045D00E23244 /* HomeViewController.swift in Sources */,
+				C713566827C36624005AD2E1 /* ReminderListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
