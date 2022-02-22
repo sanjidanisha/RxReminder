@@ -9,21 +9,39 @@
 import UIKit
 import Firebase
 import FirebaseAuthUI
+import FirebaseAuth
 
 class ViewController: UIViewController {
-    var ref: DatabaseReference!
+    
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        ref = Database.database().reference()
+        setUpElements()
+//        ref = Database.database().reference()
+//
+//        self.ref.child("user_id").setValue(123456)
+//        self.ref.child("name").setValue("Nisha")
+//        self.ref.child("age").setValue(65)
         
-        self.ref.child("user_id").setValue(123456)
-        self.ref.child("name").setValue("Nisha")
-        self.ref.child("age").setValue(65)
-        
+    }
+    
+    func setUpElements(){
+        errorLabel.alpha = 0
     }
     
     @IBOutlet weak var usernameIcon: UITextField!{
@@ -40,24 +58,32 @@ class ViewController: UIViewController {
        }
     }
     
-    
-    @IBAction func loginButton(_ sender: UIButton) {
+    @IBAction func loginTapped(_ sender: Any) {
         
-        let authUI = FUIAuth.defaultAuthUI()
+        let username = usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        guard authUI != nil else {
-            return
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        Auth.auth().signIn(withEmail: username, password: password) { (result,error) in
+            
+            if error != nil {
+                self.errorLabel.text = error!.localizedDescription
+                self.errorLabel.alpha = 1
+            }
+            else {
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+                
+                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+                
+            }
         }
-        
-        authUI?.delegate = self
-        
-        let authViewController = authUI!.authViewController()
-        
-        present(authViewController, animated: true, completion: nil)
-        
     }
-
+    
 }
+
 
 extension UITextField {
    func setIcon(_ image: UIImage) {
@@ -73,7 +99,7 @@ extension UITextField {
 }
 
 extension ViewController: FUIAuthDelegate {
-    
+
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?)
     {
         if error != nil {
