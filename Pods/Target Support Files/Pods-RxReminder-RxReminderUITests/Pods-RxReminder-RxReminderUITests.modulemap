@@ -1,6 +1,0 @@
-framework module Pods_RxReminder_RxReminderUITests {
-  umbrella header "Pods-RxReminder-RxReminderUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
