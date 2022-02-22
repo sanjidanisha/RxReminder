@@ -48,7 +48,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSc-CX-Mh3"/>
-                                            <segue destination="5R8-P1-NfQ" kind="show" id="iX8-eY-Vaj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k3-GJ-0L9" userLabel="Sign up">
@@ -347,9 +346,6 @@
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="5R8-P1-NfQ" kind="show" id="qSw-62-kKS"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0b-lS-SUS">
                                         <rect key="frame" x="0.0" y="300" width="334" height="20.5"/>
@@ -479,7 +475,7 @@
             <objects>
                 <viewController id="XmZ-wp-6Es" customClass="ListViewController" customModule="RxReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yyg-1R-gn3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="EUl-I1-v30"/>
@@ -500,7 +496,4 @@
         <image name="stethoscope" width="23" height="23"/>
         <image name="user" width="23" height="23"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="qSw-62-kKS"/>
-    </inferredMetricsTieBreakers>
 </document>
