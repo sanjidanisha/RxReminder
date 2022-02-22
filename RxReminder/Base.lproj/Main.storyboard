@@ -48,6 +48,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHj-p5-p2t"/>
+                                            <segue destination="5R8-P1-NfQ" kind="show" id="M26-v3-w1n"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k3-GJ-0L9" userLabel="Sign up">
@@ -153,11 +154,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Gfq-po-HDP" kind="relationship" relationship="viewControllers" id="F7b-Cr-Ym8"/>
                         <segue destination="OZH-p8-imf" kind="relationship" relationship="viewControllers" id="wca-Tp-oY7"/>
                         <segue destination="h01-1e-HZc" kind="relationship" relationship="viewControllers" id="Uxp-bO-PbA"/>
                         <segue destination="8Vj-AA-cXO" kind="relationship" relationship="viewControllers" id="9rx-FW-KsF"/>
                         <segue destination="njk-eo-hit" kind="relationship" relationship="viewControllers" id="iUu-ZO-xgc"/>
+                        <segue destination="5R8-P1-NfQ" kind="show" id="KPX-CF-2YF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFt-Je-LHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -199,7 +200,7 @@
         <!--Home-->
         <scene sceneID="ESk-xg-ods">
             <objects>
-                <viewController id="Gfq-po-HDP" customClass="HomeViewController" customModule="RxReminder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Gfq-po-HDP" customClass="ReminderListViewController" customModule="RxReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ya-BQ-EnG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -454,19 +455,26 @@
             <objects>
                 <tableViewController id="5R8-P1-NfQ" customClass="ReminderListViewController" customModule="RxReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="893-Ps-oPm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                                Hello, Jared                              " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x9y-Ia-dYM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="165"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReminderListCell" rowHeight="99" id="jJ1-JW-0MQ" customClass="ReminderListCell" customModule="RxReminder" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="99"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReminderListCell" rowHeight="158" id="jJ1-JW-0MQ" customClass="ReminderListCell" customModule="RxReminder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="193" width="414" height="158"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jJ1-JW-0MQ" id="nlh-Bh-Xw3">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-b4-5hB">
-                                            <rect key="frame" x="20" y="28" width="44" height="43"/>
+                                            <rect key="frame" x="20" y="57.5" width="44" height="43"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="P5Y-b4-5hB" secondAttribute="height" multiplier="1:1" id="GP0-eE-y21"/>
                                                 <constraint firstAttribute="width" constant="44" id="mue-3w-jRX"/>
@@ -477,15 +485,15 @@
                                                 <segue destination="XmZ-wp-6Es" kind="show" id="NeZ-MH-ymI"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvm-7K-Ijy">
-                                            <rect key="frame" x="72" y="49" width="36" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvm-7K-Ijy">
+                                            <rect key="frame" x="72" y="80" width="36" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA2-qi-4xf">
-                                            <rect key="frame" x="72" y="20" width="33" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA2-qi-4xf">
+                                            <rect key="frame" x="72" y="54" width="33" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -502,6 +510,7 @@
                                         <constraint firstItem="nA2-qi-4xf" firstAttribute="top" secondItem="nlh-Bh-Xw3" secondAttribute="top" constant="20" symbolic="YES" id="x6v-lT-ULP"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.70399315868263102" green="0.93550931486410249" blue="0.83630335549563717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dateLabel" destination="tvm-7K-Ijy" id="a0C-Me-rOz"/>
                                     <outlet property="doneButton" destination="P5Y-b4-5hB" id="hYY-Wv-aE0"/>
@@ -514,11 +523,11 @@
                             <outlet property="delegate" destination="5R8-P1-NfQ" id="Vaj-TT-CtM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="agx-Ez-kRe"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJh-Iy-zDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Title" id="JuE-Wf-S6V"/>
             </objects>
-            <point key="canvasLocation" x="990" y="-687"/>
+            <point key="canvasLocation" x="989.85507246376824" y="-687.05357142857144"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="7x2-VE-ljP">
@@ -546,4 +555,7 @@
         <image name="stethoscope" width="23" height="23"/>
         <image name="user" width="23" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KPX-CF-2YF"/>
+    </inferredMetricsTieBreakers>
 </document>

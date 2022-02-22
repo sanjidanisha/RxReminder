@@ -13,12 +13,12 @@ struct Reminder {
 
 extension Reminder {
     static var testData = [
-        Reminder(title: "Lisinopril Tablets", notes: "Take one Lisinpril tablet along with water to help regulate your blood pressue"),
-        Reminder(title: "Acetaminophen Tablets",  notes: "Take one Acetaminophen after eating to help your body pain", isComplete: true),
+        Reminder(title: "Lisinopril Tablets", notes: "Take one Lisinpril with water."),
+        Reminder(title: "Acetaminophen Tablets",  notes: "Take one after eating.", isComplete: true),
         Reminder(title: "Corticosteroids Tablets",  notes: "Take one in the morning before breakfast"),
-        Reminder(title: "Atorvastatin ", notes: "Take one with or without food around the same time every day.", isComplete: true),
-        Reminder(title: "Metroprolol", notes: "Take two times a day taken with morning and evening meals.", isComplete: true),
-        Reminder(title: "Metformin",  notes: "Take two times a day with the morning and evening meals"),
+        Reminder(title: "Atorvastatin ", notes: "Take one with food after lunch", isComplete: true),
+        Reminder(title: "Metroprolol", notes: "Take one in the morning and one at the evening meals.", isComplete: true),
+        Reminder(title: "Metformin",  notes: "Take one in the morning and one at the evening after meals"),
         
 //        Reminder(title: "Interview new project manager candidate", dueDate: Date().addingTimeInterval(60000.0), notes: "Review portfolio"),
 //        Reminder(title: "Mock up onboarding experience", dueDate: Date().addingTimeInterval(72000.0), notes: "Think different"),
