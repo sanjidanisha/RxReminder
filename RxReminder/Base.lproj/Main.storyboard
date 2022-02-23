@@ -48,7 +48,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHj-p5-p2t"/>
-                                            <segue destination="5R8-P1-NfQ" kind="show" id="M26-v3-w1n"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k3-GJ-0L9" userLabel="Sign up">
@@ -158,7 +157,7 @@
                         <segue destination="h01-1e-HZc" kind="relationship" relationship="viewControllers" id="Uxp-bO-PbA"/>
                         <segue destination="8Vj-AA-cXO" kind="relationship" relationship="viewControllers" id="9rx-FW-KsF"/>
                         <segue destination="njk-eo-hit" kind="relationship" relationship="viewControllers" id="iUu-ZO-xgc"/>
-                        <segue destination="5R8-P1-NfQ" kind="show" id="KPX-CF-2YF"/>
+                        <segue destination="5R8-P1-NfQ" kind="relationship" relationship="viewControllers" id="Vgx-rh-Lzk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFt-Je-LHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -450,12 +449,12 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </scene>
-        <!--Reminder List View Controller-->
+        <!--Item-->
         <scene sceneID="74f-z1-vyY">
             <objects>
                 <tableViewController id="5R8-P1-NfQ" customClass="ReminderListViewController" customModule="RxReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="893-Ps-oPm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                                Hello, Jared                              " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x9y-Ia-dYM">
@@ -523,6 +522,8 @@
                             <outlet property="delegate" destination="5R8-P1-NfQ" id="Vaj-TT-CtM"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="aPs-7e-yg1"/>
+                    <navigationItem key="navigationItem" id="Mlg-5Z-lLU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJh-Iy-zDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationItem title="Title" id="JuE-Wf-S6V"/>
@@ -555,7 +556,4 @@
         <image name="stethoscope" width="23" height="23"/>
         <image name="user" width="23" height="23"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="KPX-CF-2YF"/>
-    </inferredMetricsTieBreakers>
 </document>
