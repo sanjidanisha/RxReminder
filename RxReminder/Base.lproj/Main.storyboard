@@ -154,11 +154,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="OZH-p8-imf" kind="relationship" relationship="viewControllers" id="wca-Tp-oY7"/>
-                        <segue destination="h01-1e-HZc" kind="relationship" relationship="viewControllers" id="Uxp-bO-PbA"/>
-                        <segue destination="8Vj-AA-cXO" kind="relationship" relationship="viewControllers" id="9rx-FW-KsF"/>
-                        <segue destination="njk-eo-hit" kind="relationship" relationship="viewControllers" id="iUu-ZO-xgc"/>
                         <segue destination="5R8-P1-NfQ" kind="relationship" relationship="viewControllers" id="Vgx-rh-Lzk"/>
+                        <segue destination="8Vj-AA-cXO" kind="relationship" relationship="viewControllers" id="9rx-FW-KsF"/>
+                        <segue destination="h01-1e-HZc" kind="relationship" relationship="viewControllers" id="Uxp-bO-PbA"/>
+                        <segue destination="OZH-p8-imf" kind="relationship" relationship="viewControllers" id="wca-Tp-oY7"/>
+                        <segue destination="njk-eo-hit" kind="relationship" relationship="viewControllers" id="iUu-ZO-xgc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFt-Je-LHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -674,7 +674,7 @@
                             <outlet property="delegate" destination="5R8-P1-NfQ" id="Vaj-TT-CtM"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="aPs-7e-yg1"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="home" selectedImage="home" id="aPs-7e-yg1"/>
                     <navigationItem key="navigationItem" id="Mlg-5Z-lLU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJh-Iy-zDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
