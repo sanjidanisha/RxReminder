@@ -22,6 +22,9 @@
 		C713567227C36652005AD2E1 /* medListFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713566F27C36652005AD2E1 /* medListFirebase.swift */; };
 		C713567327C36652005AD2E1 /* medListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713567027C36652005AD2E1 /* medListService.swift */; };
 		C713567527C36672005AD2E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713567427C36672005AD2E1 /* TableViewCell.swift */; };
+		C7A0188727EFA2D4008B20AD /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0188627EFA2D4008B20AD /* CalendarCell.swift */; };
+		C7A0188927EFA94B008B20AD /* CalendarCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0188827EFA94B008B20AD /* CalendarCellViewController.swift */; };
+		C7A0188B27EFCFAF008B20AD /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0188A27EFCFAF008B20AD /* CalendarHelper.swift */; };
 		C7A1C53427B245D100A78B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C53327B245D100A78B52 /* AppDelegate.swift */; };
 		C7A1C53627B245D100A78B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C53527B245D100A78B52 /* SceneDelegate.swift */; };
 		C7A1C53827B245D100A78B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C53727B245D100A78B52 /* ViewController.swift */; };
@@ -67,6 +70,9 @@
 		C713566F27C36652005AD2E1 /* medListFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = medListFirebase.swift; sourceTree = "<group>"; };
 		C713567027C36652005AD2E1 /* medListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = medListService.swift; sourceTree = "<group>"; };
 		C713567427C36672005AD2E1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C7A0188627EFA2D4008B20AD /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		C7A0188827EFA94B008B20AD /* CalendarCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCellViewController.swift; sourceTree = "<group>"; };
+		C7A0188A27EFCFAF008B20AD /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		C7A1C53027B245D100A78B52 /* RxReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A1C53327B245D100A78B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7A1C53527B245D100A78B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -205,6 +211,9 @@
 				C7A1C53727B245D100A78B52 /* ViewController.swift */,
 				C7A1C56327B249C200A78B52 /* GoogleService-Info.plist */,
 				C7A1C53927B245D100A78B52 /* Main.storyboard */,
+				C7A0188627EFA2D4008B20AD /* CalendarCell.swift */,
+				C7A0188827EFA94B008B20AD /* CalendarCellViewController.swift */,
+				C7A0188A27EFCFAF008B20AD /* CalendarHelper.swift */,
 				C7A1C53C27B245D500A78B52 /* Assets.xcassets */,
 				C713566427C36624005AD2E1 /* HomeScreenNew */,
 				C7A1C53E27B245D500A78B52 /* LaunchScreen.storyboard */,
@@ -475,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A0188927EFA94B008B20AD /* CalendarCellViewController.swift in Sources */,
 				C713567527C36672005AD2E1 /* TableViewCell.swift in Sources */,
 				C713567127C36652005AD2E1 /* medList.swift in Sources */,
 				C713566A27C36624005AD2E1 /* ReminderListViewController.swift in Sources */,
@@ -484,8 +494,10 @@
 				C7A1C53427B245D100A78B52 /* AppDelegate.swift in Sources */,
 				14E7B75527B4042C00E23244 /* SignUpViewController.swift in Sources */,
 				C713567227C36652005AD2E1 /* medListFirebase.swift in Sources */,
+				C7A0188B27EFCFAF008B20AD /* CalendarHelper.swift in Sources */,
 				C713566C27C3664D005AD2E1 /* ListViewController.swift in Sources */,
 				C7A1C53627B245D100A78B52 /* SceneDelegate.swift in Sources */,
+				C7A0188727EFA2D4008B20AD /* CalendarCell.swift in Sources */,
 				C713566827C36624005AD2E1 /* ReminderListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
