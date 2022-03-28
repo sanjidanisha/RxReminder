@@ -13,7 +13,6 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
     
-
     @IBOutlet weak var usernameTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -37,6 +36,8 @@ class ViewController: UIViewController {
 //        self.ref.child("user_id").setValue(123456)
 //        self.ref.child("name").setValue("Nisha")
 //        self.ref.child("age").setValue(65)
+        
+    
         
     }
     
@@ -107,5 +108,6 @@ extension ViewController: FUIAuthDelegate {
         }
         performSegue(withIdentifier: "HomePage", sender: self)
     }
+    
 }
 
